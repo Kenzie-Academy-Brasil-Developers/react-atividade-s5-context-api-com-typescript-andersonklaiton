@@ -1,6 +1,5 @@
 import { useCart } from "../../Providers/Cart";
-import { ContainerImage } from "../ProductsList/styles";
-import { Container, ContainerProduct } from "./styles";
+import { Container, ContainerImage, ContainerProduct, Img } from "./styles";
 
 interface CartProps {
   id: number;
@@ -24,7 +23,7 @@ const Cart = () => {
         {cart && cart.map((productCart) => (
           <ContainerProduct key={productCart.id}>
             <ContainerImage>
-              <img alt={productCart.title} src={productCart.image} />
+              <Img alt={productCart.title} src={productCart.image} />
             </ContainerImage>
             <div>
               <p>{productCart.title}</p>

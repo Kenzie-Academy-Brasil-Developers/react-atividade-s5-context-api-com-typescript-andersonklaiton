@@ -4,11 +4,13 @@ export const Container = styled.div`
 display: flex;
 width: 90%;
 background-color: lightblue;
+flex-wrap: wrap;
+    justify-content: center;
  
 `
 
 export const ContainerProduct = styled.div`
-  width: 33%;
+  width: 20%;
     height: 300px;
     margin: 10px;
     background-color: white;
@@ -29,7 +31,7 @@ export const ContainerProduct = styled.div`
         color:white;
         border-radius:4px;
         border: none;
-        cursor:pointer
+        cursor:pointer;
         &:hover{
             background-color: darkorange;
         }
